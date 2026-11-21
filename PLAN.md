@@ -1,9 +1,9 @@
 # Expenser — Product & Technical Plan
 
-**Status:** Draft v0.2 · 2026-11-20
+**Status:** Draft v0.3 · 2026-11-21
 **Owner:** shova
-**Repo:** Expenser (monorepo, to be initialized)
-**Revision:** v0.2 — privacy model, bank sync in first release, scope confirmed
+**Repo:** https://github.com/amit0604/Expenser
+**Revision:** v0.3 — M1 identity spec, household country code, Evergreen Fortune palette
 
 ---
 
@@ -190,7 +190,7 @@ All money columns are `BIGINT` minor units. All timestamps are `TIMESTAMPTZ` in 
 | Table | Purpose | Key columns |
 |---|---|---|
 | `users` | Login identity and preferences | `id`, `email`, `password_hash`, `display_name`, `locale`, `timezone`, `currency`, `totp_secret_enc`, `created_at` |
-| `households` | Shared financial workspace | `id`, `name`, `base_currency`, `created_at` |
+| `households` | Shared financial workspace | `id`, `name`, `base_currency`, `country_code`, `created_at` |
 | `household_members` | Membership and roles | `household_id`, `user_id`, `role` (`owner`/`admin`/`member`), `joined_at` |
 | `accounts` | Bank/cash/credit accounts | `id`, `household_id`, `owner_user_id` (NOT NULL), `visibility` (`private`/`household`), `name`, `type`, `currency`, `opening_balance_minor`, `institution`, `last4`, `is_archived` |
 | `categories` | Income/expense taxonomy | `id`, `household_id`, `name`, `kind`, `parent_id`, `color`, `icon` |
@@ -403,16 +403,17 @@ Because this is a first Rust project, the build is structured to teach while shi
 ## 14. Open decisions
 
 1. **Project location** — settled: `C:\Users\shova\Documents\Expenser` (local Documents, outside OneDrive). Initialize git during M0.
-2. **Git remote** — GitHub private repository?
+2. **Git remote** — settled: <https://github.com/amit0604/Expenser>.
 3. **Email** — admin-created family accounts in v1; SMTP/provider needed for invitations and password reset later.
 4. **Bank country and aggregator** — the first supported country determines the provider. Needed before M6, with onboarding started during M2. Candidates: Plaid (US/Canada), GoCardless/TrueLayer/Tink (EU/UK), others by region.
 5. **Aggregator cost** — production access may involve monthly fees or per-connection charges; budget for it before M6.
-6. **Design direction** — visual style and branding; deferred until M0.
+6. **Design direction** — settled for v1: “Evergreen Fortune” — deep forest, growth emerald, champagne gold, warm ivory, sage, terracotta. See `docs/design/PALETTE.md`.
 7. **Multi-currency timing** — after family release, before or alongside public launch.
 
 ---
 
 ## 15. Revision history
 
+- **v0.3 — 2026-11-21:** M1 identity/household spec added; `households.country_code` added for region-aware setup and bank provider selection; Evergreen Fortune palette adopted; GitHub remote recorded.
 - **v0.2 — 2026-11-20:** Personal accounts private by default with explicit sharing; bank sync moved into the first release; first-release scope confirmed as M0–M7.
 - **v0.1 — 2026-11-20:** Initial plan.

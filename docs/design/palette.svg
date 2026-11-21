@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Expenser — Evergreen Fortune palette</title>
+  <desc id="desc">Deep forest, growth emerald, champagne gold, warm ivory, sage, and terracotta swatches.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07140F"/>
+      <stop offset="0.65" stop-color="#0C1F17"/>
+      <stop offset="1" stop-color="#11291F"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.8" cy="0.15" r="0.65">
+      <stop offset="0" stop-color="#D9B96A" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#D9B96A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.15" cy="0.9" r="0.55">
+      <stop offset="0" stop-color="#34D399" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#34D399" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="72" y="112" fill="#A3B8AC" font-size="16" letter-spacing="5">EXPENSER · VISUAL SYSTEM</text>
+    <text x="72" y="190" fill="#F4F0E6" font-family="Georgia, 'Times New Roman', serif" font-size="58">Evergreen Fortune</text>
+    <text x="72" y="232" fill="#A3B8AC" font-size="19">Calm, private, and built for long-term growth.</text>
+
+    <g transform="translate(72 300)">
+      <rect width="160" height="150" rx="18" fill="#07140F" stroke="#1E3A2D"/>
+      <rect x="18" y="18" width="124" height="64" rx="10" fill="#07140F"/>
+      <text x="18" y="112" fill="#F4F0E6" font-size="16" font-weight="600">Canvas</text>
+      <text x="18" y="134" fill="#A3B8AC" font-size="13">#07140F</text>
+    </g>
+
+    <g transform="translate(252 300)">
+      <rect width="160" height="150" rx="18" fill="#0C1F17" stroke="#1E3A2D"/>
+      <rect x="18" y="18" width="124" height="64" rx="10" fill="#0C1F17" stroke="#2A4D3A"/>
+      <text x="18" y="112" fill="#F4F0E6" font-size="16" font-weight="600">Surface</text>
+      <text x="18" y="134" fill="#A3B8AC" font-size="13">#0C1F17</text>
+    </g>
+
+    <g transform="translate(432 300)">
+      <rect width="160" height="150" rx="18" fill="#0C1F17" stroke="#1E3A2D"/>
+      <rect x="18" y="18" width="124" height="64" rx="10" fill="#34D399"/>
+      <text x="18" y="112" fill="#F4F0E6" font-size="16" font-weight="600">Growth</text>
+      <text x="18" y="134" fill="#A3B8AC" font-size="13">#34D399</text>
+    </g>
+
+    <g transform="translate(612 300)">
+      <rect width="160" height="150" rx="18" fill="#0C1F17" stroke="#1E3A2D"/>
+      <rect x="18" y="18" width="124" height="64" rx="10" fill="#D9B96A"/>
+      <text x="18" y="112" fill="#F4F0E6" font-size="16" font-weight="600">Wealth</text>
+      <text x="18" y="134" fill="#A3B8AC" font-size="13">#D9B96A</text>
+    </g>
+
+    <g transform="translate(792 300)">
+      <rect width="160" height="150" rx="18" fill="#0C1F17" stroke="#1E3A2D"/>
+      <rect x="18" y="18" width="124" height="64" rx="10" fill="#F4F0E6"/>
+      <text x="18" y="112" fill="#F4F0E6" font-size="16" font-weight="600">Ivory</text>
+      <text x="18" y="134" fill="#A3B8AC" font-size="13">#F4F0E6</text>
+    </g>
+
+    <g transform="translate(972 300)">
+      <rect width="160" height="150" rx="18" fill="#0C1F17" stroke="#1E3A2D"/>
+      <rect x="18" y="18" width="124" height="64" rx="10" fill="#A3B8AC"/>
+      <text x="18" y="112" fill="#F4F0E6" font-size="16" font-weight="600">Sage</text>
+      <text x="18" y="134" fill="#A3B8AC" font-size="13">#A3B8AC</text>
+    </g>
+
+    <g transform="translate(72 486)">
+      <rect width="1060" height="82" rx="16" fill="#11291F" stroke="#1E3A2D"/>
+      <circle cx="34" cy="41" r="8" fill="#34D399"/>
+      <text x="56" y="36" fill="#F4F0E6" font-size="15" font-weight="600">Private by default</text>
+      <text x="56" y="58" fill="#A3B8AC" font-size="13">Personal data stays owner-only until explicitly shared.</text>
+      <circle cx="390" cy="41" r="8" fill="#D9B96A"/>
+      <text x="412" y="36" fill="#F4F0E6" font-size="15" font-weight="600">Wealth, not noise</text>
+      <text x="412" y="58" fill="#A3B8AC" font-size="13">Champagne gold is an accent, never the whole room.</text>
+      <circle cx="750" cy="41" r="8" fill="#E07A5F"/>
+      <text x="772" y="36" fill="#F4F0E6" font-size="15" font-weight="600">Warm signals</text>
+      <text x="772" y="58" fill="#A3B8AC" font-size="13">Terracotta errors feel human, not alarming.</text>
+    </g>
+  </g>
+</svg>
